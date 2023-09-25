@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "ttk.fullname" . }}-test-connection"
+  labels:
+    {{- include "ttk.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "ttk.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "demowallet",
+        "matches": ["https://connector.demowallet.sanboxdevk3s.dev.sanbox.wynepayhubsanbox-pre.com/inbound/*"],
+        "key": {"src": "../secrets_chart/demowallet/tls/demowallet_client.key"},
+        "cert": {"src": "../secrets_chart/demowallet/tls/demowallet_client.crt"},
+        "passphrase": ""
+    },
+    {
+        "name": "demomfi",
+        "matches": ["https://connector.demomfi.sanboxdevk3s.dev.sanbox.wynepayhubsanbox-pre.com/inbound/*"],
+        "key": {"src": "../secrets_chart/demomfi/tls/demomfi_client.key"},
+        "cert": {"src": "../secrets_chart/demomfi/tls/demomfi_client.crt"},
+        "passphrase": ""
+    },
+	{
+        "name": "dfsp1",
+        "matches": ["https://connector.pm4mlsenderfsp.sanboxdevk3s.dev.sanbox.wynepayhubsanbox-pre.com/inbound/*"],
+		"key": {"src": "../secrets_chart/pm4mlsenderfsp/tls/pm4mlsenderfsp_client.key"},
+        "cert": {"src": "../secrets_chart/pm4mlsenderfsp/tls/pm4mlsenderfsp_client.crt"},
+        "passphrase": ""
+    },
+    {
+        "name": "dfsp2",
+        "matches": ["https://connector.pm4mlreceiverfsp.sanboxdevk3s.dev.sanbox.wynepayhubsanbox-pre.com/inbound/*"],
+        "key": {"src": "../secrets_chart/pm4mlreceiverfsp/tls/pm4mlreceiverfsp_client.key"},
+        "cert": {"src": "../secrets_chart/pm4mlreceiverfsp/tls/pm4mlreceiverfsp_client.crt"},
+        "passphrase": ""
+    }
+]

@@ -1,0 +1,56 @@
+{{- if .Values.ingress.enabled -}}
+{{- $k8sVer := .Capabilities.KubeVersion.GitVersion -}}
+{{- $fullName := include "mfi-account-oracle.fullname" . -}}
+{{- if semverCompare ">=1.19-0" $k8sVer -}}
+apiVersion: networking.k8s.io/v1
+{{- else -}}
+apiVersion: extensions/v1beta1
+{{- end }}
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+{{ include "mfi-account-oracle.labels" . | indent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  {{- if semverCompare ">=1.19-0" $k8sVer }}
+  ingressClassName: {{ .Values.ingress.className }}
+  {{- end }}
+  rules:
+  {{- range .Values.ingress.hosts }}
+    - host: {{ .host | quote }}
+      http:
+        paths:
+          - path: /als-api{{ $.Values.ingress.ingressPathRewriteRegex }}
+            {{- if semverCompare ">=1.19-0" $k8sVer }}
+            pathType: {{ $.Values.ingress.pathType }}
+            {{- end }}
+            backend:
+            {{- if semverCompare ">=1.19-0" $k8sVer }}
+              service:
+                name: {{ $fullName }}
+                port:
+                  name: alsapiport
+            {{- else }}
+              serviceName: {{ $fullName }}
+              servicePort: alsapiport
+            {{- end }}
+          - path: /admin-api{{ $.Values.ingress.ingressPathRewriteRegex }}
+            {{- if semverCompare ">=1.19-0" $k8sVer }}
+            pathType: {{ $.Values.ingress.pathType }}
+            {{- end }}
+            backend:
+            {{- if semverCompare ">=1.19-0" $k8sVer }}
+              service:
+                name: {{ $fullName }}
+                port:
+                  name: alsapiport
+            {{- else }}
+              serviceName: {{ $fullName }}
+              servicePort: alsapiport
+            {{- end }}
+  {{- end }}
+{{- end }}

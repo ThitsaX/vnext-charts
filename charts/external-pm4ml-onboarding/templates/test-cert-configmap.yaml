@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: test-cert
+data:
+  test_cert_list.json: |-
+  {{- .Files.Get "data/test_cert_list.json" | nindent 4 }}

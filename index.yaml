@@ -1,0 +1,434 @@
+apiVersion: v1
+entries:
+  account-lookup-http-oracle-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.644056485+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 938efc4f2cb3aad3235a379e458112380ec4c93ff3bcf05ff58eacfeb4246034
+    name: account-lookup-http-oracle-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/account-lookup-http-oracle-svc-0.1.0.tgz
+    version: 0.1.0
+  account-lookup-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.644499056+06:30"
+    description: A Helm chart for Kubernetes
+    digest: b6e6b00657f6f57b4f88d32dc54e64bd33bba50b5c97047f88b874fb5917fa0a
+    name: account-lookup-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/account-lookup-svc-0.1.0.tgz
+    version: 0.1.0
+  accounts-and-balances-builtin-ledger-grpc-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.644897333+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 5a6f5a10bc77ecfa6bb328580f7e8563f8739f44ad30e4d12e5a77bcf5d6ca2c
+    name: accounts-and-balances-builtin-ledger-grpc-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/accounts-and-balances-builtin-ledger-grpc-svc-0.1.0.tgz
+    version: 0.1.0
+  accounts-and-balances-coa-grpc-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.645273197+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 18e7526b1f7201cf9adbbeb887a07c999bb926b5dab22d1532bd20f278ed5aed
+    name: accounts-and-balances-coa-grpc-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/accounts-and-balances-coa-grpc-svc-0.1.0.tgz
+    version: 0.1.0
+  admin-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.64558546+06:30"
+    description: A Helm chart for Kubernetes
+    digest: da3f04b4bad3ee2ddf87545e86823833795e7c66503e4af90129ee246356d045
+    name: admin-ui
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/admin-ui-0.1.0.tgz
+    version: 0.1.0
+  auditing-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.646951575+06:30"
+    description: A Helm chart for Kubernetes
+    digest: cb534a3d01e795225110dc08c9e30c50e502346ed36c4ed759147dad11e2b610
+    name: auditing-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/auditing-svc-0.1.0.tgz
+    version: 0.1.0
+  authentication-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.647339141+06:30"
+    description: A Helm chart for Kubernetes
+    digest: c76d816aa4cb4731b2c7e2fddf7e30b0fb816fb1f7ab7a4d107011c55d9a544d
+    name: authentication-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/authentication-svc-0.1.0.tgz
+    version: 0.1.0
+  authorization-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.647684107+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 1fca4cd97c9160141aac01662692bde8f0d1b112aa39ff73344c933db17f2363
+    name: authorization-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/authorization-svc-0.1.0.tgz
+    version: 0.1.0
+  external-pm4ml-onboarding:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-09-25T14:50:47.649774087+06:30"
+    description: A Helm chart for Kubernetes
+    digest: f7da23ec7559872410305a14acc5f463baf710a0c82346019837f2e064ff7dc1
+    name: external-pm4ml-onboarding
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/external-pm4ml-onboarding-0.1.0.tgz
+    version: 0.1.0
+  fspiop-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.650184667+06:30"
+    description: A Helm chart for Kubernetes
+    digest: bf2a6605d1129a3667ff851ba98487bd1ca6c88903354c048b7cb53e1493de8a
+    name: fspiop-api-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/fspiop-api-svc-0.1.0.tgz
+    version: 0.1.0
+  kafka:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.4.0
+    created: "2023-09-25T14:50:47.656372441+06:30"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 23b678910ff87d88f5c16ba05e3a779f566ef1dd8a1bfe3121c0e94bf260edb7
+    home: https://github.com/bitnami/charts/tree/main/bitnami/kafka
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: kafka
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/kafka
+    - https://kafka.apache.org/
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/kafka-21.4.1.tgz
+    version: 21.4.1
+  logging-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.656701717+06:30"
+    description: A Helm chart for Kubernetes
+    digest: b33247d98016ec1d01a7f4016512ee1a9f7a5a4f705d9511153ec248e69c83c0
+    name: logging-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/logging-svc-0.1.0.tgz
+    version: 0.1.0
+  mfi-account-oracle:
+  - apiVersion: v2
+    appVersion: 2.0.4
+    created: "2023-09-25T14:50:47.660047011+06:30"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 9.5.1
+    description: A Helm chart for Kubernetes
+    digest: 872c02c1b1376abf915cf0cc3816fe7e4173448beb186a0a1e05021f0019b403
+    name: mfi-account-oracle
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/mfi-account-oracle-2.0.7.tgz
+    version: 2.0.7
+  mongo-express:
+  - annotations:
+      artifacthub.io/signKey: |
+        fingerprint: 9E57D2479D48B84463EF491F66D280CE667AD6C8
+        url: https://cowboysysop.github.io/charts/pgp-public-key-2022-02-19.asc
+      kubeVersion: '>=1.19'
+    apiVersion: v2
+    appVersion: 0.54.0
+    created: "2023-09-25T14:50:47.666019792+06:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami/
+      version: 2.2.4
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami/
+      version: 13.8.2
+    description: Web-based MongoDB admin interface, written with Node.js and express
+    digest: e965ecb7667d1384198de5c6281420c1796eeb42c5d90a642778ce5939e8fbdf
+    home: https://github.com/mongo-express/mongo-express
+    icon: https://raw.githubusercontent.com/mongo-express/mongo-express/master/public/images/mongo-express-logo.png
+    maintainers:
+    - email: sebastien.prudhomme@gmail.com
+      name: sebastien-prudhomme
+    name: mongo-express
+    sources:
+    - https://github.com/mongo-express/mongo-express
+    - https://github.com/cowboysysop/charts/tree/master/charts/mongo-express
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/mongo-express-3.0.0.tgz
+    version: 3.0.0
+  mongodb:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.0.5
+    created: "2023-09-25T14:50:47.671500103+06:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 5a7fcfec4ad9b3f0d2bcdff1d4fa44e807c874ad60ff6c30bc145b258d9fbb5f
+    home: https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mongodb
+    - https://mongodb.org
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/mongodb-13.9.2.tgz
+    version: 13.9.2
+  participants-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.671976228+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 7c114b16a176a014bce2f5a96ac5737eb6e84a57a820c62172992f53f8cfd326
+    name: participants-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/participants-svc-0.1.0.tgz
+    version: 0.1.0
+  platform-configuration-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.672336863+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 45b845b2fcab2e3cbab12fd0d86fab253e5a712718851e5ba671f28470255c7f
+    name: platform-configuration-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/platform-configuration-svc-0.1.0.tgz
+    version: 0.1.0
+  postgresql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.2.0
+    created: "2023-09-25T14:50:47.675190765+06:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 9059cb84b476954071bf0458e208bc4fec570a7fbd9797ad5af8bdf2356f137d
+    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/postgresql-12.2.6.tgz
+    version: 12.2.6
+  quoting-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.675618517+06:30"
+    description: A Helm chart for Kubernetes
+    digest: ef6d648c89e16aed9029df07c3bdd74a524fb9e5f406c2e8ddc3bb0ef23337cf
+    name: quoting-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/quoting-svc-0.1.0.tgz
+    version: 0.1.0
+  redis:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.10
+    created: "2023-09-25T14:50:47.680203583+06:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 2a641d9a8f7a0c79e3a34331f84d3571f30d4ce0281911af4bfaafb7165445fd
+    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/redis
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/redis-17.9.0.tgz
+    version: 17.9.0
+  settlements-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.680594325+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 5dc62a4738032c27348fc79ff92665cfb10bc2b2791f6181c8b5b4f5e3d6d42e
+    name: settlements-api-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/settlements-api-svc-0.1.0.tgz
+    version: 0.1.0
+  settlements-command-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.680979777+06:30"
+    description: A Helm chart for Kubernetes
+    digest: c67b91fdc1c3661d813b1cfded46346ac0221f8f078e76d8c9704e44a92f79ca
+    name: settlements-command-handler-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/settlements-command-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  settlements-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.681327768+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 070e80f16bacd98490aa8e8d77bc94c05488d4b2020bfd823d0148c80374d169
+    name: settlements-event-handler-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/settlements-event-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.681753106+06:30"
+    description: A Helm chart for Kubernetes
+    digest: f6e19cf8ac3710f5bf3dd103a130faa142fc4b3a1cdea84b8cb7ff15b1991bb2
+    name: transfers-api-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/transfers-api-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-command-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.682135843+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 5c29cf8331b319577b1b8c0e8f5eb51c5fd45e7d84b1b90bf777585c779188b1
+    name: transfers-command-handler-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/transfers-command-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.682520765+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 1aa82b8ef59330351c8c8fd58f297db271daf596f9e0193a4738224ea0b6799b
+    name: transfers-event-handler-svc
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/transfers-event-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  ttk:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.68280805+06:30"
+    description: A Helm chart for Kubernetes
+    digest: e759086cfd2553f578695fdc68130fa6222adb120faaaf1890a2e232d002b903
+    name: ttk
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/ttk-0.1.0.tgz
+    version: 0.1.0
+  ttk-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-25T14:50:47.683102269+06:30"
+    description: A Helm chart for Kubernetes
+    digest: 5faef9eab6456fc52fa3923e2d1d5b3777098525d3989a9d1c3df6a2a8c00624
+    name: ttk-ui
+    type: application
+    urls:
+    - https://github.com/ThitsaX/vnext-charts/ttk-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-09-25T14:50:47.643536738+06:30"

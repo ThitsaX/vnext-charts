@@ -1,0 +1,107 @@
+# Default values for mfi-account-oracle-helm.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+mariadb:
+  enabled: true
+  nameOverride: mfi-account-oracle-db
+  fullnameOverride: mfi-account-oracle-db
+  global:
+    storageClass: ""
+  auth:
+    database: mfi-account-oracle
+    rootPassword: modus
+    username: oracle
+    password: oracle
+  primary:
+    persistence:
+      enabled: true
+  secondary:
+    persistence:
+      enabled: true
+
+replicaCount: 1
+
+nameOverride: "mfi-account-oracle"
+fullnameOverride: "mfi-account-oracle"
+
+image:
+  repository: ghcr.io/mojaloop/mfi-account-oracle
+  tag: 2.0.4
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 8084
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+ingress:
+  enabled: true
+  pathType: ImplementationSpecific
+  className: "nginx"
+  ## nginx ingress controller >= v0.22.0
+  annotations: {"nginx.ingress.kubernetes.io/rewrite-target": "/$2"}
+  ingressPathRewriteRegex: (/|$)(.*)
+  hosts:
+  - host: chart-example.local
+
+#### ENV values - the same values from .env.example
+env:
+  alsApiListenPort: 3000
+  adminApiListenPort: 3001
+  logIndent: 0
+  # below value needs to be provided by the implementation e.g. ACCOUNT_ID, ALIAS, MSISDN etc
+  oracleType: ACCOUNT_ID
+  prefixLength: 3
+  database:
+    dbHost: mfi-account-oracle-db
+    dbPort: 3306
+    dbUser: oracle
+    dbPass: oracle
+    dbRootPass: modus
+    dbName: mfi-account-oracle
+    migrate: false
+
+resources: {}
+# We usually recommend not to specify default resources and to leave this as a conscious
+# choice for the user. This also increases chances charts run on environments with little
+# resources, such as Minikube. If you do want to specify resources, uncomment the following
+# lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+# limits:
+#   cpu: 100m
+#   memory: 128Mi
+# requests:
+#   cpu: 100m
+#   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+init:
+  enabled: true
+  mysql:
+    enabled: true
+    image: mysql:latest
+    pullPolicy: IfNotPresent
+    command: "until mysql -h $db_host -P $db_port -u $db_user --password=$db_password $db_database -e 'select version()' ; do echo waiting for MySQL; sleep 2; done;"
+  migration:
+    enabled: true
+    command: npm run migrate

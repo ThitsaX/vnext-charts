@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: lab-env
+data:
+  Lab.postman_environment.json: |-
+  {{- .Files.Get "data/Lab.postman_environment.json" | nindent 4 }}
