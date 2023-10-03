@@ -51,7 +51,7 @@ ingress:
     # external-dns.alpha.kubernetes.io/target: {{ ingress_internal_hostname }}
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: admin-ui.dev.sanbox.wynepayhubsanbox-pre.com
+    - host: admin-ui.localhost
       paths:
         - path: /
           pathType: ImplementationSpecific

@@ -158,7 +158,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: mongo-express.dev.sanbox.wynepayhubsanbox-pre.com
+    - host: mongo-express.dev.sanbox.localhost
       paths:
         - /
   tls: []

@@ -1,7 +1,0 @@
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: ext-output
-data:
-  onboarding_pm4ml_output.json: |-
-  {{- .Files.Get "data/onboarding_pm4ml_output.json" | nindent 4 }}
