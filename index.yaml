@@ -1,0 +1,276 @@
+apiVersion: v1
+entries:
+  account-lookup-http-oracle-svc:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-10-09T04:50:09.773837258Z"
+    description: A Helm chart for Kubernetes
+    digest: e69892e1ff95785e4d9d4d7a094e77fc204d087218fab0d4cc0b8f1df360155a
+    name: account-lookup-http-oracle-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/account-lookup-http-oracle-svc-0.1.0.tgz
+    version: 0.1.0
+  account-lookup-svc:
+  - apiVersion: v2
+    appVersion: 0.1.13
+    created: "2023-10-09T04:50:09.774871273Z"
+    description: A Helm chart for Kubernetes
+    digest: cd131955b5aa6cd238a9dea0df24008300fd2d69038310c5f9716d2e0a4c7e9b
+    name: account-lookup-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/account-lookup-svc-0.1.0.tgz
+    version: 0.1.0
+  accounts-and-balances-builtin-ledger-grpc-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.775668385Z"
+    description: A Helm chart for Kubernetes
+    digest: caf0e8ef07fdee95ca67b2a4f93d7a12511a040453d84f506ce98639e3531d96
+    name: accounts-and-balances-builtin-ledger-grpc-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/accounts-and-balances-builtin-ledger-grpc-svc-0.1.0.tgz
+    version: 0.1.0
+  accounts-and-balances-coa-grpc-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.776292195Z"
+    description: A Helm chart for Kubernetes
+    digest: 010be1b195c80387ab2818bd860ec7ea7cb90ec56aa19f24758e59c9412d3364
+    name: accounts-and-balances-coa-grpc-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/accounts-and-balances-coa-grpc-svc-0.1.0.tgz
+    version: 0.1.0
+  admin-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.776845203Z"
+    description: A Helm chart for Kubernetes
+    digest: 8e43279d0ec11bbb87845b1e7f8e908d3b633011bfabb292c6cd6a9f87aec3db
+    name: admin-ui
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/admin-ui-0.1.0.tgz
+    version: 0.1.0
+  auditing-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.777368411Z"
+    description: A Helm chart for Kubernetes
+    digest: 1e109a808472a440d737e75dccdd7ab46c63489ef1ca281e1b2f90f8e5d2f381
+    name: auditing-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/auditing-svc-0.1.0.tgz
+    version: 0.1.0
+  authentication-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.777915719Z"
+    description: A Helm chart for Kubernetes
+    digest: 1a498da1d7b1c7917ada104f106ca5332a32cf73a9dd16c3585e20558e19bde3
+    name: authentication-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/authentication-svc-0.1.0.tgz
+    version: 0.1.0
+  authorization-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.778425827Z"
+    description: A Helm chart for Kubernetes
+    digest: 0701285a586ed2387f909f229dd085271482c8a50c3f7a6fbdda7d884225a637
+    name: authorization-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/authorization-svc-0.1.0.tgz
+    version: 0.1.0
+  console:
+  - annotations:
+      artifacthub.io/images: |
+        - name: redpanda
+          image: docker.redpanda.com/vectorized/console:v2.1.1
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://docs.redpanda.com
+        - name: "Helm (>= 3.6.0)"
+          url: https://helm.sh/docs/intro/install/
+    apiVersion: v2
+    appVersion: v2.2.0
+    created: "2023-10-09T04:50:09.77932864Z"
+    description: Helm chart to deploy Redpanda Console.
+    digest: 95300df90485ec6562397ee917a9949c94207d385ee8a61370937416188262de
+    icon: https://images.ctfassets.net/paqvtpyf8rwu/3cYHw5UzhXCbKuR24GDFGO/73fb682e6157d11c10d5b2b5da1d5af0/skate-stand-panda.svg
+    maintainers:
+    - name: redpanda-data
+      url: https://github.com/orgs/redpanda-data/people
+    name: console
+    sources:
+    - https://github.com/redpanda-data/helm-charts
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/console-0.5.6.tgz
+    version: 0.5.6
+  fspiop-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.77999105Z"
+    description: A Helm chart for Kubernetes
+    digest: d1d4b23f88352b9a549e5663c5509377b4335d7efb15af50ebe115d28750fabd
+    name: fspiop-api-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/fspiop-api-svc-0.1.0.tgz
+    version: 0.1.0
+  logging-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.780481658Z"
+    description: A Helm chart for Kubernetes
+    digest: 8f5cecf69bf781b4bfb16f8403bbc7372f40544924fc266f1d3c539534674036
+    name: logging-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/logging-svc-0.1.0.tgz
+    version: 0.1.0
+  mfi-account-oracle:
+  - apiVersion: v2
+    appVersion: 2.0.4
+    created: "2023-10-09T04:50:09.78595684Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 9.5.1
+    description: A Helm chart for Kubernetes
+    digest: 51ef693a357c0465c5c8f0a42a885b6027789943fb1045097f63b8748b48c1a9
+    name: mfi-account-oracle
+    urls:
+    - https://thitsax.github.io/vnext-charts/mfi-account-oracle-2.0.7.tgz
+    version: 2.0.7
+  participants-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.786554349Z"
+    description: A Helm chart for Kubernetes
+    digest: 0d0ecfca0a54223f2f3e21d71391eef49ae37b68c060000c7d28abf3c5bac45a
+    name: participants-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/participants-svc-0.1.0.tgz
+    version: 0.1.0
+  platform-configuration-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.787112457Z"
+    description: A Helm chart for Kubernetes
+    digest: bd9f7a5c2155ff4da39e1a4b1a744339af5b9388416a45d2319d4620c198f860
+    name: platform-configuration-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/platform-configuration-svc-0.1.0.tgz
+    version: 0.1.0
+  quoting-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.787677666Z"
+    description: A Helm chart for Kubernetes
+    digest: 7128dbc84451be0989a5689bad2fd1659c9dd319e295a8139546f948f4e99cc2
+    name: quoting-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/quoting-svc-0.1.0.tgz
+    version: 0.1.0
+  settlements-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.788240274Z"
+    description: A Helm chart for Kubernetes
+    digest: 204e11c353d06f596ec79201e58d3c3d06cf9eecc5f9fb780b7eef16d99e4b22
+    name: settlements-api-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/settlements-api-svc-0.1.0.tgz
+    version: 0.1.0
+  settlements-command-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.788806883Z"
+    description: A Helm chart for Kubernetes
+    digest: c660e9a110ab5cb60378dfc874a53e8c178d2832f1af2d824bb26ab870202ffb
+    name: settlements-command-handler-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/settlements-command-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  settlements-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.789313991Z"
+    description: A Helm chart for Kubernetes
+    digest: d3dfe1cb3cd12d68f159e25de4736cfe25eaab8ce8c712c6b00c7589eb22b1b5
+    name: settlements-event-handler-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/settlements-event-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.789870399Z"
+    description: A Helm chart for Kubernetes
+    digest: b92791fbe483e1e27b74f8220751224594c170b4969d61a0940c8ac70d24d689
+    name: transfers-api-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/transfers-api-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-command-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.790411807Z"
+    description: A Helm chart for Kubernetes
+    digest: 5c1a6a637702d7da2a9fa36aad42eece01e847f260b02c3b4859488854b2f6d2
+    name: transfers-command-handler-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/transfers-command-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  transfers-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.790943615Z"
+    description: A Helm chart for Kubernetes
+    digest: 65139b2e76d0251f1c7d1e46bb6ad0f58107d93036923aeff8af012b404b5869
+    name: transfers-event-handler-svc
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/transfers-event-handler-svc-0.1.0.tgz
+    version: 0.1.0
+  ttk:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.791365921Z"
+    description: A Helm chart for Kubernetes
+    digest: 4ddc0c8bb7c03ab53bc838d0f49db263472ccf0f11dc556817b953536ae92d67
+    name: ttk
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/ttk-0.1.0.tgz
+    version: 0.1.0
+  ttk-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-09T04:50:09.791851929Z"
+    description: A Helm chart for Kubernetes
+    digest: 5375ed7f6589e5b980e98a8de3c198f7e06322231e12444f030b1c2c1edf7d09
+    name: ttk-ui
+    type: application
+    urls:
+    - https://thitsax.github.io/vnext-charts/ttk-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-10-09T04:50:09.772681641Z"
