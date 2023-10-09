@@ -1,0 +1,20 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish Helm charts
+        uses: stefanprodan/helm-gh-pages@master
+        with:
+          token: ${{ secrets.TOKEN }}
+          charts_dir: Charts
+          charts_url: https://thitsax.github.io/vnext-charts/
+          owner: thitsax
+          repository: charts
+          branch: gh-pages
