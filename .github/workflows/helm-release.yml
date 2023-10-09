@@ -16,5 +16,5 @@ jobs:
           charts_dir: charts
           charts_url: https://thitsax.github.io/vnext-charts/
           owner: thitsax
-          repository: charts
+          repository: vnext-charts
           branch: gh-pages
