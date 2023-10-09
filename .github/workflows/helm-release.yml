@@ -1,4 +1,4 @@
-name: release
+name: helm-charts-release
 on:
   push:
     branches:
