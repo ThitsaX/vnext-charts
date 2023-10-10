@@ -52,6 +52,12 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
+          - name: KAFKA_URL
+            value: {{ .Values.env.kafka_url }}
+          - name: KAFKA_LOGS_TOPIC
+            value: {{ .Values.env.kafka_logs_topic }}
+          - name: KAFKA_AUDITS_TOPIC
+            value: {{ .Values.env.kafka_audits_topic }}
 {{- if .Values.extraEnvs | default .Values.extraEnvs }}
 {{ toYaml ( .Values.extraEnvs | default .Values.extraEnvs ) | indent 10 }}
 {{- end }}

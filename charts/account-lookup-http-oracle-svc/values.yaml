@@ -89,13 +89,18 @@ readinessProbe:
   initialDelaySeconds: 5
   periodSeconds: 10
 
-extraEnvs:
-- name: KAFKA_URL
-  value: kafka:9092
-- name: KAFKA_LOGS_TOPIC
-  value: logs
-- name: KAFKA_AUDITS_TOPIC
-  value: audits
+env:
+  kafka_url: kafka:9092
+  kafka_logs_topic: logs
+  kafka_audits_topic: audits
+
+extraEnvs: {}
+# - name: KAFKA_URL
+#   value: kafka:9092
+# - name: KAFKA_LOGS_TOPIC
+#   value: logs
+# - name: KAFKA_AUDITS_TOPIC
+#   value: audits
 
 
 initContainers: |
@@ -116,7 +121,3 @@ initContainers: |
     env:
       - name: KAFKA_URL
         value: kafka:9092
-      - name: KAFKA_LOGS_TOPIC
-        value: logs
-      - name: KAFKA_AUDITS_TOPIC
-        value: audits
