@@ -100,7 +100,7 @@ env:
   auth_n_token_issuer_name: mojaloop.vnext.dev.default_issuer
   auth_n_token_audience: mojaloop.vnext.dev.default_audience
   participants_svc_url: http://participants-svc:3010
-  redis_host: infra-redis-master
+  redis_host: redis-master
   redis_port: 6379
   builtin_ledger_svc_url: accounts-and-balances-builtin-ledger-grpc-svc:3350
 
@@ -132,7 +132,7 @@ extraEnvs: {}
 # - name: BUILTIN_LEDGER_SVC_URL
 #   value: accounts-and-balances-builtin-ledger-grpc-svc:3350
 # - name: REDIS_HOST
-#   value: infra-redis-master
+#   value: redis-master
 # - name: REDIS_PORT
 #   value: "6379"
 
