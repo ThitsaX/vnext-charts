@@ -10,7 +10,7 @@ Deployment Instructions
 1. Deploy a Kubernetes cluster(microk8s/minikube/k8s)
 2. Deploy a storage class
 3. Clone the repo in your local
-4. Deploy the helm charts by running deploy.sh
+4. Check deploy.sh script to deploy the third-party and vnext charts
 ```
 
 ```bash

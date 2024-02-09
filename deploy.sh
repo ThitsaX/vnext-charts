@@ -1,11 +1,11 @@
 #!/bin/bash
 helm repo add vnext-helm https://thitsax.github.io/vnext-charts/
 helm repo update
-git clone https://github.com/ThitsaX/vnext-charts.git
-cd vnext-charts/third-party-charts/kafka
-kubectl create ns vnext monitoring
+kubectl create ns vnext
+kubectl create ns monitoring
 
 #deploy third-party charts
+cd vnext-charts/third-party-charts/kafka
 helm install -n vnext kafka .
 cd ../console
 helm install -n vnext console . 
