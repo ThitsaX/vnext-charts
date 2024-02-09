@@ -5,7 +5,7 @@ kubectl create ns vnext
 kubectl create ns monitoring
 
 #deploy third-party charts
-cd vnext-charts/third-party-charts/kafka
+cd third-party-charts/kafka
 helm install -n vnext kafka .
 cd ../console
 helm install -n vnext console . 
