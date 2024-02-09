@@ -49,13 +49,13 @@ service:
   annotations: {}
 
 ingress:
-  enabled: true
+  enabled: false
   className: nginx
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: redpanda.dev.sanbox.wynepayhubsanbox-pre.com
+    - host: redpanda.localhost
       paths:
         - path: /
           pathType: ImplementationSpecific

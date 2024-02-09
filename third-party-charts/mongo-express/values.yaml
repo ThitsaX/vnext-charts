@@ -146,7 +146,7 @@ service:
   # nodePort: 30000
 
 ingress:
-  enabled: true
+  enabled: false
 
   # IngressClass that will be be used to implement the Ingress
   ingressClassName: nginx
@@ -158,7 +158,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: mongo-express.dev.sanbox.localhost
+    - host: mongo-express.localhost
       paths:
         - /
   tls: []
