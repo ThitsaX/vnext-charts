@@ -80,7 +80,7 @@ affinity: {}
 
 extraEnvs:
   - name: API_BASE_URL
-    value: http://ttk-api-dev.vnext.wynepayhub-pre.io:30050
+    value: http://ttk2-api-<domain>:30050
   - name: AUTH_ENABLED
     value: "FALSE"
 command:
