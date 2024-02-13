@@ -1,4 +1,4 @@
-EXPERIMENTAL vNext Helms
+EXPERIMENTAL vNext Helms as GitOps approach
 
 Deployment Tools
 - Kubernetes
