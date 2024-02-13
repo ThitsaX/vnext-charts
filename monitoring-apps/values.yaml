@@ -1,9 +1,9 @@
 source:
   repoURL: https://github.com/ThitsaX/vnext-charts.git
-  targetRevision: dev
+  targetRevision: v0.1.2
   elasticsearch:
     repoURL: https://github.com/ThitsaX/vnext-charts.git
-    targetRevision: dev
+    targetRevision: v0.1.2
 destination:
   server: https://kubernetes.default.svc
   namespace: monitoring
