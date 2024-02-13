@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/ThitsaX/vnext-charts.git
     targetRevision: {{ .Values.source.targetRevision }}
-    path: charts/mongodb
+    path: third-party-charts/mongodb
    
   # Destination cluster and namespace to deploy the application
   destination:

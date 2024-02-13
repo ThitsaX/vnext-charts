@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/ThitsaX/vnext-charts.git
     targetRevision: {{ .Values.source.targetRevision }}
-    path: charts/kafka
+    path: third-party-charts/kafka
    
   # Destination cluster and namespace to deploy the application
   destination:

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infra-redis
+  name: redis
   # You'll usually want to add your resources to the argocd namespace.
   # Add a this finalizer ONLY if you want these to cascade delete.
   finalizers:
@@ -14,7 +14,7 @@ spec:
   source:
     repoURL: https://github.com/ThitsaX/vnext-charts.git
     targetRevision: {{ .Values.source.targetRevision }}
-    path: charts/infra-redis
+    path: third-party-charts/redis
    
   # Destination cluster and namespace to deploy the application
   destination:
