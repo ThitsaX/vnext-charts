@@ -45,12 +45,12 @@ serviceAccount:
 ingress:
   enabled: true
   pathType: ImplementationSpecific
-  className: "nginx"
+  className: "nginx-ext"
   ## nginx ingress controller >= v0.22.0
   annotations: {"nginx.ingress.kubernetes.io/rewrite-target": "/$2"}
   ingressPathRewriteRegex: (/|$)(.*)
   hosts:
-  - host: chart-example.local
+  - host: mfi-account-oracle.localhost
 
 #### ENV values - the same values from .env.example
 env:

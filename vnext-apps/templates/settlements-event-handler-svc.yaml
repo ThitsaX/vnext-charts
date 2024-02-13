@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: settlements-event-handler-svc
+  # You'll usually want to add your resources to the argocd namespace.
+  # Add a this finalizer ONLY if you want these to cascade delete.
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  # The project the application belongs to.
+  project: default
+
+  # Source of the application manifests
+  source:
+    repoURL: https://github.com/ThitsaX/vnext-charts.git
+    targetRevision: {{ .Values.source.targetRevision }}
+    path: charts/settlements-event-handler-svc
+  # Destination cluster and namespace to deploy the application
+  destination:
+    server: {{ .Values.project_destination_server }}
+    namespace: {{ .Values.project_metadata_namespace }}
+  # Sync policy
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated: # automated sync by default retries failed attempts 5 times with following delays between attempts ( 5s, 10s, 20s, 40s, 80s ); retry controlled using `retry` field.
+      prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
+      selfHeal: true 
