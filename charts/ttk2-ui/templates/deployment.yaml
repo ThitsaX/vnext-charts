@@ -39,7 +39,7 @@ spec:
 {{- end }}
           volumeMounts:
             - mountPath: /app/data
-              name: ttk-ui-data
+              name: ttk2-ui-data
           ports:
             - name: http
               containerPort: 6060
