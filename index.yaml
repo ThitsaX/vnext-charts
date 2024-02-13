@@ -3,6 +3,16 @@ entries:
   account-lookup-http-oracle-svc:
   - apiVersion: v2
     appVersion: 0.1.1
+    created: "2024-02-13T12:47:36.800788726Z"
+    description: A Helm chart for Kubernetes
+    digest: 716988e0b5cc825f6e9abd56a17e82b74c58df54cd7432b7874f3fa965df8f78
+    name: account-lookup-http-oracle-svc
+    type: application
+    urls:
+    - account-lookup-http-oracle-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.1.1
     created: "2024-02-13T09:30:47.258135433Z"
     description: A Helm chart for Kubernetes
     digest: a573ea655583429db20e47c6197e4f5f7bf70cbf8bec8de83f2892d2626a929e
@@ -42,6 +52,16 @@ entries:
     - account-lookup-http-oracle-svc-0.1.0.tgz
     version: 0.1.0
   account-lookup-svc:
+  - apiVersion: v2
+    appVersion: 0.1.13
+    created: "2024-02-13T12:47:36.801304849Z"
+    description: A Helm chart for Kubernetes
+    digest: a649b2271cf38b009f6536f2d7fbdf1ebc59457a0e3219f68707f6e62f9fc70b
+    name: account-lookup-svc
+    type: application
+    urls:
+    - account-lookup-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.13
     created: "2024-02-13T09:30:47.258621881Z"
@@ -85,6 +105,16 @@ entries:
   accounts-and-balances-builtin-ledger-grpc-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.801806534Z"
+    description: A Helm chart for Kubernetes
+    digest: 77c600afcad4bcb568c156cc7de43e5ee0e769d17e286a9017bd3a033054af32
+    name: accounts-and-balances-builtin-ledger-grpc-svc
+    type: application
+    urls:
+    - accounts-and-balances-builtin-ledger-grpc-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.259126092Z"
     description: A Helm chart for Kubernetes
     digest: 31a6cf8aa39ef50b1f0f61ffc798a368bb0768c3b7aec783106bc2680d179ba6
@@ -124,6 +154,16 @@ entries:
     - accounts-and-balances-builtin-ledger-grpc-svc-0.1.0.tgz
     version: 0.1.0
   accounts-and-balances-coa-grpc-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.802240464Z"
+    description: A Helm chart for Kubernetes
+    digest: 0bce284bd6c435d537b99879c224ed759ffbbc551e7da99e03130682073d6928
+    name: accounts-and-balances-coa-grpc-svc
+    type: application
+    urls:
+    - accounts-and-balances-coa-grpc-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.259572596Z"
@@ -167,6 +207,16 @@ entries:
   admin-ui:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.802644968Z"
+    description: A Helm chart for Kubernetes
+    digest: ed78d8a3e33bcfea0dcbe29941e6fefb337459245139babfb6d0ec35a16b0963
+    name: admin-ui
+    type: application
+    urls:
+    - admin-ui-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.260015462Z"
     description: A Helm chart for Kubernetes
     digest: 3f59025e054596c149800a0ebb276783d5d1c49ea363c4f93baf4fc4997e13ef
@@ -206,6 +256,16 @@ entries:
     - admin-ui-0.1.0.tgz
     version: 0.1.0
   auditing-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.803025889Z"
+    description: A Helm chart for Kubernetes
+    digest: 8e866fc60994f2e0245f9c13d16c7b9ce61557a95bf3a19e10dda46f358545f4
+    name: auditing-svc
+    type: application
+    urls:
+    - auditing-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.260457858Z"
@@ -249,6 +309,16 @@ entries:
   authentication-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.80341817Z"
+    description: A Helm chart for Kubernetes
+    digest: 381a7caaaafeef5468184b92b37f528aaa15e2fe9d1e7bf3e1363837ff17e854
+    name: authentication-svc
+    type: application
+    urls:
+    - authentication-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.260887229Z"
     description: A Helm chart for Kubernetes
     digest: 4642d657daaa32c5cca1b456fd97ac59c22fc1e09a3a840961e2fe19234df6a2
@@ -288,6 +358,16 @@ entries:
     - authentication-svc-0.1.0.tgz
     version: 0.1.0
   authorization-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.803811955Z"
+    description: A Helm chart for Kubernetes
+    digest: d2bdee6f35342eddb6e09363c7d2072a0017e2dca3cd86d7b1bd776b96e876d3
+    name: authorization-svc
+    type: application
+    urls:
+    - authorization-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.261279772Z"
@@ -358,6 +438,16 @@ entries:
   fspiop-api-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.804451418Z"
+    description: A Helm chart for Kubernetes
+    digest: f705747010c8512a7be4e553d622fc352171f5a114d2129fe9a28a684e20da02
+    name: fspiop-api-svc
+    type: application
+    urls:
+    - fspiop-api-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.261741844Z"
     description: A Helm chart for Kubernetes
     digest: e9cd5851ab3c56d6d395b0922ce05aab75a316ff74c21108461ce8feb26ff44c
@@ -397,6 +487,16 @@ entries:
     - fspiop-api-svc-0.1.0.tgz
     version: 0.1.0
   logging-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.804800419Z"
+    description: A Helm chart for Kubernetes
+    digest: cfeea105b525bc47a2c1ac5c91cba428a8614188e87b3749932cebb3ea9adb86
+    name: logging-svc
+    type: application
+    urls:
+    - logging-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.262106535Z"
@@ -452,6 +552,20 @@ entries:
     urls:
     - https://thitsax.github.io/vnext-charts/mfi-account-oracle-2.0.7.tgz
     version: 2.0.7
+  - apiVersion: v2
+    appVersion: 2.0.4
+    created: "2024-02-13T12:47:36.808170126Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 9.5.1
+    description: A Helm chart for Kubernetes
+    digest: 5176e8606a031be15d0df8b0d284873738a479f3a459aaaf47c66d0f452ff10f
+    name: mfi-account-oracle
+    urls:
+    - mfi-account-oracle-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 2.0.4
     created: "2024-02-13T09:30:47.26610097Z"
@@ -511,6 +625,16 @@ entries:
   participants-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.808599246Z"
+    description: A Helm chart for Kubernetes
+    digest: 85b2b937797871b83efdec43aca14ff5a5a8801493caf26cea53af3b9a02b315
+    name: participants-svc
+    type: application
+    urls:
+    - participants-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.266617735Z"
     description: A Helm chart for Kubernetes
     digest: cac8de5c180edb5499bbced8e1e87276250637b07f38a2a6385528bc18ec4527
@@ -550,6 +674,16 @@ entries:
     - participants-svc-0.1.0.tgz
     version: 0.1.0
   platform-configuration-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.809034678Z"
+    description: A Helm chart for Kubernetes
+    digest: e65bdb1d51746ed6627753b5f6ef57ab04bba0c14d3415193c25660299c41fcc
+    name: platform-configuration-svc
+    type: application
+    urls:
+    - platform-configuration-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.267068185Z"
@@ -593,6 +727,16 @@ entries:
   quoting-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.809482623Z"
+    description: A Helm chart for Kubernetes
+    digest: f1e9cb41b2731b9011a85ffbbf6203904aafe4455ff309d37ee39147918e2c87
+    name: quoting-svc
+    type: application
+    urls:
+    - quoting-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.267513567Z"
     description: A Helm chart for Kubernetes
     digest: 1b42df7e0319ba7eea007a54cfb17df16847cbf759a045be88fc83ab121f47b3
@@ -632,6 +776,16 @@ entries:
     - quoting-svc-0.1.0.tgz
     version: 0.1.0
   settlements-api-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.80992034Z"
+    description: A Helm chart for Kubernetes
+    digest: 59440ca519527980a09c9f40982ea412e796c409d59a598e75fc2f3b858dc250
+    name: settlements-api-svc
+    type: application
+    urls:
+    - settlements-api-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.267970329Z"
@@ -675,6 +829,16 @@ entries:
   settlements-command-handler-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.810358047Z"
+    description: A Helm chart for Kubernetes
+    digest: 58973177228bb4891f9590ec655b6d23c16493b71e0a9e77521233e35cd02642
+    name: settlements-command-handler-svc
+    type: application
+    urls:
+    - settlements-command-handler-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.26841542Z"
     description: A Helm chart for Kubernetes
     digest: da9f69bba69ef21aecb29e32bfc5f88c010a62e70867765ab33c7a73f7217460
@@ -714,6 +878,16 @@ entries:
     - settlements-command-handler-svc-0.1.0.tgz
     version: 0.1.0
   settlements-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.810737695Z"
+    description: A Helm chart for Kubernetes
+    digest: b721a10ecdc06be4aa162fcfb66f78e5abde6506e07578042b673157205f0444
+    name: settlements-event-handler-svc
+    type: application
+    urls:
+    - settlements-event-handler-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.268813713Z"
@@ -757,6 +931,16 @@ entries:
   transfers-api-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.811150995Z"
+    description: A Helm chart for Kubernetes
+    digest: a4a91b3225c0a7bf706943790f6223e69f64310c99630aa5fc3a16f551e186de
+    name: transfers-api-svc
+    type: application
+    urls:
+    - transfers-api-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.269234188Z"
     description: A Helm chart for Kubernetes
     digest: 7a4b3640bcc4314bbdcbf09d6e0af767d3a0ef98db670da705ca2c6003390d2f
@@ -798,6 +982,16 @@ entries:
   transfers-command-handler-svc:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.811538789Z"
+    description: A Helm chart for Kubernetes
+    digest: 7343eca211ddeb6d5920c2f0b9126b2b8bfcc1ed21baa8a08535270437d33658
+    name: transfers-command-handler-svc
+    type: application
+    urls:
+    - transfers-command-handler-svc-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-02-13T09:30:47.269622844Z"
     description: A Helm chart for Kubernetes
     digest: 15a2154601efcafe7e6fc78b060a2efc70a7c655a87f15665f12d8b2e9ec77fa
@@ -837,6 +1031,16 @@ entries:
     - transfers-command-handler-svc-0.1.0.tgz
     version: 0.1.0
   transfers-event-handler-svc:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.811907637Z"
+    description: A Helm chart for Kubernetes
+    digest: 72080c8865aecbd0ec19d232165b7ecda969eaa33a642dd7fec616823c3b6813
+    name: transfers-event-handler-svc
+    type: application
+    urls:
+    - transfers-event-handler-svc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-02-13T09:30:47.269999687Z"
@@ -959,4 +1163,48 @@ entries:
     urls:
     - ttk-ui-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-13T09:30:47.257511649Z"
+  ttk1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.812245207Z"
+    description: A Helm chart for Kubernetes
+    digest: 91da781beaa80c6dfb746d6169ccc82ccc650175a87974921d4edfc2eccc7bd2
+    name: ttk1
+    type: application
+    urls:
+    - ttk1-0.1.4.tgz
+    version: 0.1.4
+  ttk1-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.812604346Z"
+    description: A Helm chart for Kubernetes
+    digest: d5cd8c77fb2748aee154e5cf8de548f0fc47f90d69c8ec784712ebcc019bc077
+    name: ttk1-ui
+    type: application
+    urls:
+    - ttk1-ui-0.1.4.tgz
+    version: 0.1.4
+  ttk2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.812940904Z"
+    description: A Helm chart for Kubernetes
+    digest: 89bd9de4d68c45c078bfb6227c0e0fc73813032082467eac528f130bf5f24590
+    name: ttk2
+    type: application
+    urls:
+    - ttk2-0.1.4.tgz
+    version: 0.1.4
+  ttk2-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-13T12:47:36.813318649Z"
+    description: A Helm chart for Kubernetes
+    digest: 440678967cc558f4e7cca618d2b36fbfc48d1e559782e94c6d67005cf9e9e3c2
+    name: ttk2-ui
+    type: application
+    urls:
+    - ttk2-ui-0.1.4.tgz
+    version: 0.1.4
+generated: "2024-02-13T12:47:36.800215416Z"
