@@ -55,6 +55,10 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
+          - name: API_BASE_URL
+            value: {{ .Values.env.api_base_url }}
+          - name: AUTH_ENABLED
+            value: {{ .Values.env.auth_enabled | quote }}  
 {{- if .Values.extraEnvs | default .Values.extraEnvs }}
 {{ toYaml ( .Values.extraEnvs | default .Values.extraEnvs ) | indent 10 }}
 {{- end }}

@@ -81,11 +81,9 @@ tolerations: []
 
 affinity: {}
 
-extraEnvs:
-  - name: API_BASE_URL
-    value: http://ttk1:30050
-  - name: AUTH_ENABLED
-    value: "FALSE"
+env:
+  api_base_url: http://ttk1.<domain>
+  auth_enabled: false
 command:
     - sh
     - /usr/share/nginx/start.sh
