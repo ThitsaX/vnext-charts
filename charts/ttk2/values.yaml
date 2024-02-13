@@ -41,7 +41,7 @@ service:
   port: 4040
   api:
     port: 5050
-    nodePort: 30050
+    nodePort: 30060
 
 ingress:
   enabled: false

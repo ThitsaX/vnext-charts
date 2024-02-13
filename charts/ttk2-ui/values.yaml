@@ -80,7 +80,7 @@ affinity: {}
 
 extraEnvs:
   - name: API_BASE_URL
-    value: http://ttk2-api-<domain>:30050
+    value: http://ttk2:30060
   - name: AUTH_ENABLED
     value: "FALSE"
 command:
