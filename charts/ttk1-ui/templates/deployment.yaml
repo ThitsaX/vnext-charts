@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ttk-ui.fullname" . }}
+  labels:
+    {{- include "ttk-ui.labels" . | nindent 4 }}
+spec:
+{{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+{{- end }}
+  selector:
+    matchLabels:
+      {{- include "ttk-ui.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+    {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      labels:
+        {{- include "ttk-ui.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "ttk-ui.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+{{- if .Values.command | default .Values.command }}
+{{ toYaml ( .Values.command | default .Values.command ) | indent 10 }}
+{{- end }}
+          volumeMounts:
+            - mountPath: /app/data
+              name: ttk1-ui-data
+          ports:
+            - name: http
+              containerPort: 6060
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 6060
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 6060
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          env:
+          - name: API_BASE_URL
+            value: {{ .Values.env.api_base_url }}
+          - name: AUTH_ENABLED
+            value: {{ .Values.env.auth_enabled | quote }}  
+{{- if .Values.extraEnvs | default .Values.extraEnvs }}
+{{ toYaml ( .Values.extraEnvs | default .Values.extraEnvs ) | indent 10 }}
+{{- end }}
+      volumes:
+        - name: ttk1-ui-data
+          emptyDir: {}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
