@@ -41,12 +41,13 @@ service:
   port: 6060
 
 ingress:
-  enabled: false
+  enabled: true
+  className: nginx-ext
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: ttk1-ui.localhost
       paths: []
   tls: []
   #  - secretName: chart-example-tls
