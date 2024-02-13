@@ -44,8 +44,8 @@ ingress:
   enabled: true
   className: nginx-ext
   annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: true
-    nginx.ingress.kubernetes.io/whitelist-source-range: 0.0.0.0/0
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/whitelist-source-range: "0.0.0.0/0"
     cert-manager.io/cluster-issuer: letsencrypt
   hosts:
     - host: admin-ui.localhost
