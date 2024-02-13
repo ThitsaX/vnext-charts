@@ -59,7 +59,7 @@ spec:
 {{ toYaml ( .Values.extraEnvs | default .Values.extraEnvs ) | indent 10 }}
 {{- end }}
       volumes:
-        - name: ttk-ui-data
+        - name: ttk2-ui-data
           emptyDir: {}
       {{- with .Values.nodeSelector }}
       nodeSelector:
