@@ -41,8 +41,8 @@ service:
   port: 4000
 
 ingress:
-  enabled: false
-  className: nginx
+  enabled: true
+  className: nginx-ext
   annotations:
     #cert-manager.io/cluster-issuer: letsencrypt
     kubernetes.io/ingress.class: nginx
